@@ -1,5 +1,4 @@
 module.exports = {
-  purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
@@ -9,9 +8,11 @@ module.exports = {
   },
   plugins: [],
   purge: {
+    mode: 'all',
     enabled: true,
     content: [
       './index.html'
     ]
   }
 }
+

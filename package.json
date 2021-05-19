@@ -4,7 +4,7 @@
   "description": "",
   "main": "postcss.config.js",
   "scripts": {
-    "build": "tailwindcss build src/index.css -o dist/htalk.css",
+    "build": "tailwindcss build src/css/index.css -o dist/htalk.css & webpack",
     "dev": "vite"
   },
   "repository": {
@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "css-loader": "^5.2.4",
-    "raw-loader": "^4.0.2"
+    "raw-loader": "^4.0.2",
+    "style-loader": "^2.0.0"
   }
 }
