@@ -1,0 +1,10 @@
+{
+    "HTALK_ERROR":"HTALK组件异常：",
+    "HTALK_WARN":"HTALK组件警告:${1}，这可能会带来意外的错误！",
+    "NONE_ELE":"ID为${1}的Element不存在！",
+    "NONE_ELEID":"没有指定Element的ID！",
+    "NONE_DOMAIN":"没有指定后端域名！",
+    "NONE_LIMIT":"没有指定限制的条数，已使用默认值10",
+    "NEXT":"下一条"
+
+}

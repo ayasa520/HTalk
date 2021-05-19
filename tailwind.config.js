@@ -11,7 +11,7 @@ module.exports = {
     mode: 'all',
     enabled: true,
     content: [
-      './index.html'
+      './src/html/*.html'
     ]
   }
 }
