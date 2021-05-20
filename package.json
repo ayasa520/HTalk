@@ -4,7 +4,9 @@
   "description": "",
   "main": "postcss.config.js",
   "scripts": {
-    "build": "tailwindcss build src/css/index.css -o dist/htalk.css & webpack",
+    "build": "npm run build:css & npm run build:js",
+    "build:js": "webpack",
+    "build:css": "tailwindcss build src/css/index.css -o dist/htalk.css",
     "dev": "vite"
   },
   "repository": {

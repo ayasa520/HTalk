@@ -3,7 +3,8 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, './dist'),
-        filename: 'htalk.js'
+        filename: 'htalk.js',
+        library: 'htalk'
     },
     //打包css
     module: {
