@@ -5,6 +5,8 @@
     "NONE_ELEID":"没有指定Element的ID！",
     "NONE_DOMAIN":"没有指定后端域名！",
     "NONE_LIMIT":"没有指定限制的条数，已使用默认值10",
-    "NEXT":"下一条"
+    "NONE_COLOR":"没有指定颜色，已使用默认值",
+    "NEXT":"下一波",
+    "LOADING":"加载中..."
 
 }
