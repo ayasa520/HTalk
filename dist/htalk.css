@@ -674,6 +674,10 @@ video {
   list-style-type: none;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }

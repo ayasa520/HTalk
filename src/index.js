@@ -1,4 +1,6 @@
 import hinit from 'raw-loader!./html/init.html'
+import hctx from 'raw-loader!./html/ctx.html'
+import marked from 'marked'
 import { lang } from './i18n/lang'
 require('./../dist/htalk.css')
 
@@ -18,9 +20,7 @@ export const init = function (c) {
         .replace(/<!--lang.NEXT-->/g, lang.NEXT)
     loadtalk(c)
     document.getElementById(`${c.id}_next`).addEventListener('click', () => {
-        const n = JSON.parse(ls.get(`htalk_${c.id}_cache`))
-        n.nid += c.limit
-        ls.put(`htalk_${c.id}_cache`, JSON.stringify(n))
+
         loadtalk(c)
     })
 }
@@ -35,19 +35,42 @@ const loadtalk = async (c) => {
             limit: c.limit
         })
     })).json()).content)
-    for (var i in res) {
-        if (!res[i]) {
+
+    let p = ''
+    for (var i in res.ctx) {
+        if (!res.ctx[i]) {
             const n = JSON.parse(ls.get(`htalk_${c.id}_cache`))
             n.next = false
             ls.put(`htalk_${c.id}_cache`, JSON.stringify(n))
-            nomore(c)
+            nomore()
             break;
+        }else{
+            inittalk(c,res.ctx[i])
         }
-        console.log(res[i])
     }
+    p = res.nid
+    const n = JSON.parse(ls.get(`htalk_${c.id}_cache`))
+    n.nid = Number(p)
+    ls.put(`htalk_${c.id}_cache`, JSON.stringify(n))
 }
-const nomore = (c) => {
+const nomore = () => {
+  
+}
 
+const inittalk = (c,i) => {
+  document.getElementById(`${c.id}_init`).innerHTML+=hctx
+  .replace(/<!--init-->/g,marked(i.content))
+  .replace(/<!--avatar-->/g,i.avatar)
+  .replace(/<!--name-->/g,i.name)
+  .replace(/<!--mood-->/g,i.time)
+}
+
+const rearr = (arr) => {
+    let t = {}
+    for (var i in arr) {
+        t.unshift(arr[i])
+    }
+    return t
 }
 
 const thr = (n) => {
