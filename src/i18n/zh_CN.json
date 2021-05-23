@@ -1,12 +1,16 @@
 {
-    "HTALK_ERROR":"HTALK组件异常：",
-    "HTALK_WARN":"HTALK组件警告:${1}，这可能会带来意外的错误！",
-    "NONE_ELE":"ID为${1}的Element不存在！",
-    "NONE_ELEID":"没有指定Element的ID！",
-    "NONE_DOMAIN":"没有指定后端域名！",
-    "NONE_LIMIT":"没有指定限制的条数，已使用默认值10",
-    "NONE_COLOR":"没有指定颜色，已使用默认值",
-    "NEXT":"下一波",
-    "LOADING":"加载中..."
-
+    "HTALK_ERROR": "HTALK组件异常：",
+    "HTALK_WARN": "HTALK组件警告：${1}，这可能会带来意外的错误！",
+    "NONE_ELE": "ID为${1}的Element不存在！",
+    "NONE_ELEID": "没有指定Element的ID！",
+    "NONE_DOMAIN": "没有指定后端域名！",
+    "NONE_LIMIT": "没有指定限制的条数，已使用默认值10",
+    "NONE_COLOR": "没有指定颜色，已使用默认值",
+    "NEXT": "下一波",
+    "LOADING": "HTALK：加载中...",
+    "UNKNOW_ERROR": "后端返回了致命的错误 - ",
+    "WARN_VER":"后端与前端版本不匹配",
+    "NOMORE":"莫得更多了！",
+    "NONE_RECAP":"没有人机验证保护！",
+    "LOAD_RECAP_SUCCESS":"加载人机验证脚本成功！"
 }

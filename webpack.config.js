@@ -6,6 +6,10 @@ module.exports = {
         filename: 'htalk.js',
         library: 'htalk'
     },
+    optimization: {
+        minimize: false
+        //开发模式为false不混淆
+    },
     //打包css
     module: {
         rules: [

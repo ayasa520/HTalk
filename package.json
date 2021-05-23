@@ -1,5 +1,5 @@
 {
-  "name": "HTALK",
+  "name": "htalk",
   "version": "1.0.0",
   "description": "",
   "main": "postcss.config.js",
@@ -31,6 +31,7 @@
   "dependencies": {
     "css-loader": "^5.2.4",
     "marked": "^2.0.4",
+    "notyf": "^3.9.0",
     "raw-loader": "^4.0.2",
     "style-loader": "^2.0.0",
     "webpack": "^5.37.1",
