@@ -1,8 +1,8 @@
 {
   "name": "htalk",
-  "version": "1.0.0",
-  "description": "",
-  "main": "postcss.config.js",
+  "version": "2.0.0",
+  "description": "A Simple And Modern Talk",
+  "main": "./dist/htalk.js",
   "scripts": {
     "build": "npm run build:css && npm run build:js",
     "build:js": "webpack",
@@ -14,8 +14,8 @@
     "url": "git+https://github.com/HexoPlusPlus/HTALK.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "ChenYFan",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/HexoPlusPlus/HTALK/issues"
   },
