@@ -3,7 +3,7 @@ import hctx from 'raw-loader!./html/ctx.html'
 import { loadJS, addCSS } from './js/loadS'
 import hlove from 'raw-loader!./html/love.html'
 import hfilllove from 'raw-loader!./html/fill_love.html'
-
+import ls from './js/ls'
 import love from './js/love'
 
 import marked from 'marked'
@@ -21,11 +21,12 @@ export const init = function (c) {
         switch (c.lg) {
             case "error":
                 return 1
-            case "warning":
-                return 2
+
             case "info":
-                return 3
+                return 2
             case "success":
+                return 3
+            case "warning":
                 return 4
             default:
                 return 4
@@ -58,10 +59,24 @@ export const init = function (c) {
     }
 
 
-    ls.put(`htalk_${c.id}_cache`, JSON.stringify({
-        nid: 0,
-        next: true
-    }))
+    (() => {
+        const cache = ls.get(`htalk_${c.id}_cache`)
+        if (!!cache && ((() => { try { const y = JSON.parse(cache); if (!!y.loved) { return true } else { return false } } catch (p) { return false } })())) {
+            const jsonc = JSON.parse(cache)
+            jsonc.nid = 0
+            jsonc.next = true
+            jsonc.added = []
+            ls.put(`htalk_${c.id}_cache`, JSON.stringify(jsonc))
+        } else {
+            ls.put(`htalk_${c.id}_cache`, JSON.stringify({
+                nid: 0,
+                next: true,
+                loved: [],
+                added: []
+            }))
+        }
+    })()
+
     document.getElementById(c.id).innerHTML = hinit
         .replace(/<!--init-->/g, `${c.id}_init`)
         .replace(/<!--next-->/g, `${c.id}_next`)
@@ -70,20 +85,26 @@ export const init = function (c) {
         .replace(/<!--lang.LOADING-->/g, lang.LOADING)
         .replace(/<!--ver-->/g, info.ver);
 
-    const startload = (c) => {
+    const startload = () => {
         loadtalk(c).then((t) => {
+            let cache = JSON.parse(ls.get(`htalk_${c.id}_cache`))
             for (var i of t) {
+                cache.added.push(i)
+            }
+            for (var i of cache.added) {
                 const n = new love(c, i)
                 document.getElementById(`${c.id}_talk_${i}_love`).addEventListener('click', () => {
                     n.add()
                 })
             }
+            ls.put(`htalk_${c.id}_cache`, JSON.stringify(cache))
+
         })
     }
 
-    startload(c)
+    startload()
     document.getElementById(`${c.id}_next`).addEventListener('click', () => {
-        startload(c)
+        startload()
     })
 
 }
@@ -169,7 +190,14 @@ const inittalk = async (c, i) => {
         })())
         .replace(/<!--from_color-->/g, ran[0])
         .replace(/<!--to_color-->/g, ran[1])
-        .replace(/<!--love-->/g, hfilllove)
+        .replace(/<!--love-->/g, (() => {
+
+            if (JSON.parse(ls.get(`htalk_${c.id}_cache`)).loved.indexOf(i.id) !== -1) {
+                return hfilllove
+            } else {
+                return hlove
+            }
+        })())
         .replace(/<!--loved-->/g, (() => {
             if (!i.love) {
                 return 0
@@ -200,17 +228,7 @@ const rearr = (arr) => {
 }
 
 
-const ls = {
-    put: (key, value) => {
-        return localStorage.setItem(key, value);
-    },
-    get: (key) => {
-        return localStorage.getItem(key)
-    },
-    del: (key) => {
-        return localStorage.removeItem(key)
-    }
-}
+
 const ranarr = (arr) => {
     return arr[Math.floor(Math.random() * arr.length)];
 }

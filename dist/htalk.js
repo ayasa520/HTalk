@@ -18,7 +18,7 @@ var htalk;
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_5_2_5_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_5_2_5_css_loader_dist_cjs_js_node_modules_notyf_3_9_0_notyf_notyf_min_css__WEBPACK_IMPORTED_MODULE_1__/* .default */ .Z);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/*! tailwindcss v2.1.2 | MIT License | https://tailwindcss.com */\n\n/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */\n\n/*\nDocument\n========\n*/\n\n/**\nUse a better box model (opinionated).\n*/\n\n*,\n::before,\n::after {\n  box-sizing: border-box;\n}\n\n/**\nUse a more readable tab size (opinionated).\n*/\n\nhtml {\n  -moz-tab-size: 4;\n  -o-tab-size: 4;\n     tab-size: 4;\n}\n\n/**\n1. Correct the line height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n*/\n\nhtml {\n  line-height: 1.15; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n}\n\n/*\nSections\n========\n*/\n\n/**\nRemove the margin in all browsers.\n*/\n\nbody {\n  margin: 0;\n}\n\n/**\nImprove consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)\n*/\n\nbody {\n  font-family:\n\t\tsystem-ui,\n\t\t-apple-system, /* Firefox supports this but not yet `system-ui` */\n\t\t'Segoe UI',\n\t\tRoboto,\n\t\tHelvetica,\n\t\tArial,\n\t\tsans-serif,\n\t\t'Apple Color Emoji',\n\t\t'Segoe UI Emoji';\n}\n\n/*\nGrouping content\n================\n*/\n\n/**\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n*/\n\nhr {\n  height: 0; /* 1 */\n  color: inherit; /* 2 */\n}\n\n/*\nText-level semantics\n====================\n*/\n\n/**\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\n\nabbr[title] {\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n\n/**\nAdd the correct font weight in Edge and Safari.\n*/\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/**\n1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)\n2. Correct the odd 'em' font sizing in all browsers.\n*/\n\ncode,\nkbd,\nsamp,\npre {\n  font-family:\n\t\tui-monospace,\n\t\tSFMono-Regular,\n\t\tConsolas,\n\t\t'Liberation Mono',\n\t\tMenlo,\n\t\tmonospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/**\nAdd the correct font size in all browsers.\n*/\n\nsmall {\n  font-size: 80%;\n}\n\n/**\nPrevent 'sub' and 'sup' elements from affecting the line height in all browsers.\n*/\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/*\nTabular data\n============\n*/\n\n/**\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n*/\n\ntable {\n  text-indent: 0; /* 1 */\n  border-color: inherit; /* 2 */\n}\n\n/*\nForms\n=====\n*/\n\n/**\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n*/\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: 1.15; /* 1 */\n  margin: 0; /* 2 */\n}\n\n/**\nRemove the inheritance of text transform in Edge and Firefox.\n1. Remove the inheritance of text transform in Firefox.\n*/\n\nbutton,\nselect { /* 1 */\n  text-transform: none;\n}\n\n/**\nCorrect the inability to style clickable types in iOS and Safari.\n*/\n\nbutton {\n  -webkit-appearance: button;\n}\n\n/**\nRemove the inner border and padding in Firefox.\n*/\n\n/**\nRestore the focus styles unset by the previous rule.\n*/\n\n/**\nRemove the additional ':invalid' styles in Firefox.\nSee: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737\n*/\n\n/**\nRemove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.\n*/\n\nlegend {\n  padding: 0;\n}\n\n/**\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\n\nprogress {\n  vertical-align: baseline;\n}\n\n/**\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n\n/**\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n\n/**\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n\n/**\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to 'inherit' in Safari.\n*/\n\n/*\nInteractive\n===========\n*/\n\n/*\nAdd the correct display in Chrome and Safari.\n*/\n\nsummary {\n  display: list-item;\n}\n\n/**\n * Manually forked from SUIT CSS Base: https://github.com/suitcss/base\n * A thin layer on top of normalize.css that provides a starting point more\n * suitable for web applications.\n */\n\n/**\n * Removes the default spacing and border for appropriate elements.\n */\n\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\n\nbutton {\n  background-color: transparent;\n  background-image: none;\n}\n\n/**\n * Work around a Firefox/IE bug where the transparent `button` background\n * results in a loss of the default `button` focus styles.\n */\n\nbutton:focus {\n  outline: 1px dotted;\n  outline: 5px auto -webkit-focus-ring-color;\n}\n\nfieldset {\n  margin: 0;\n  padding: 0;\n}\n\nol,\nul {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n/**\n * Tailwind custom reset styles\n */\n\n/**\n * 1. Use the user's configured `sans` font-family (with Tailwind's default\n *    sans-serif font stack as a fallback) as a sane default.\n * 2. Use Tailwind's default \"normal\" line-height so the user isn't forced\n *    to override it to ensure consistency even when using the default theme.\n */\n\nhtml {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; /* 1 */\n  line-height: 1.5; /* 2 */\n}\n\n/**\n * Inherit font-family and line-height from `html` so users can set them as\n * a class directly on the `html` element.\n */\n\nbody {\n  font-family: inherit;\n  line-height: inherit;\n}\n\n/**\n * 1. Prevent padding and border from affecting element width.\n *\n *    We used to set this in the html element and inherit from\n *    the parent element for everything else. This caused issues\n *    in shadow-dom-enhanced elements like <details> where the content\n *    is wrapped by a div with box-sizing set to `content-box`.\n *\n *    https://github.com/mozdevs/cssremedy/issues/4\n *\n *\n * 2. Allow adding a border to an element by just adding a border-width.\n *\n *    By default, the way the browser specifies that an element should have no\n *    border is by setting it's border-style to `none` in the user-agent\n *    stylesheet.\n *\n *    In order to easily add borders to elements by just setting the `border-width`\n *    property, we change the default border-style for all elements to `solid`, and\n *    use border-width to hide them instead. This way our `border` utilities only\n *    need to set the `border-width` property instead of the entire `border`\n *    shorthand, making our border utilities much more straightforward to compose.\n *\n *    https://github.com/tailwindcss/tailwindcss/pull/116\n */\n\n*,\n::before,\n::after {\n  box-sizing: border-box; /* 1 */\n  border-width: 0; /* 2 */\n  border-style: solid; /* 2 */\n  border-color: #e5e7eb; /* 2 */\n}\n\n/*\n * Ensure horizontal rules are visible by default\n */\n\nhr {\n  border-top-width: 1px;\n}\n\n/**\n * Undo the `border-style: none` reset that Normalize applies to images so that\n * our `border-{width}` utilities have the expected effect.\n *\n * The Normalize reset is unnecessary for us since we default the border-width\n * to 0 on all elements.\n *\n * https://github.com/tailwindcss/tailwindcss/issues/362\n */\n\nimg {\n  border-style: solid;\n}\n\ntextarea {\n  resize: vertical;\n}\n\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1;\n  color: #9ca3af;\n}\n\ninput:-ms-input-placeholder, textarea:-ms-input-placeholder {\n  opacity: 1;\n  color: #9ca3af;\n}\n\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1;\n  color: #9ca3af;\n}\n\nbutton {\n  cursor: pointer;\n}\n\ntable {\n  border-collapse: collapse;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n\n/**\n * Reset links to optimize for opt-in styling instead of\n * opt-out.\n */\n\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n\n/**\n * Reset form element properties that are easy to forget to\n * style explicitly so you don't inadvertently introduce\n * styles that deviate from your design system. These styles\n * supplement a partial reset that is already applied by\n * normalize.css.\n */\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  padding: 0;\n  line-height: inherit;\n  color: inherit;\n}\n\n/**\n * Use the configured 'mono' font family for elements that\n * are expected to be rendered with a monospace font, falling\n * back to the system monospace stack if there is no configured\n * 'mono' font family.\n */\n\npre,\ncode,\nkbd,\nsamp {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace;\n}\n\n/**\n * Make replaced elements `display: block` by default as that's\n * the behavior you want almost all of the time. Inspired by\n * CSS Remedy, with `svg` added as well.\n *\n * https://github.com/mozdevs/cssremedy/issues/14\n */\n\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block;\n  vertical-align: middle;\n}\n\n/**\n * Constrain images and videos to the parent width and preserve\n * their intrinsic aspect ratio.\n *\n * https://github.com/mozdevs/cssremedy/issues/14\n */\n\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n\n.space-x-4 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-x-reverse: 0;\n  margin-right: calc(1rem * var(--tw-space-x-reverse));\n  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));\n}\n\n.sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n}\n\n.bg-white {\n  --tw-bg-opacity: 1;\n  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));\n}\n\n.bg-indigo-100 {\n  --tw-bg-opacity: 1;\n  background-color: rgba(224, 231, 255, var(--tw-bg-opacity));\n}\n\n.bg-purple-100 {\n  --tw-bg-opacity: 1;\n  background-color: rgba(237, 233, 254, var(--tw-bg-opacity));\n}\n\n.hover\\:bg-indigo-200:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgba(199, 210, 254, var(--tw-bg-opacity));\n}\n\n.bg-gradient-to-br {\n  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));\n}\n\n.from-red-400 {\n  --tw-gradient-from: #f87171;\n  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(248, 113, 113, 0));\n}\n\n.from-yellow-500 {\n  --tw-gradient-from: #f59e0b;\n  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(245, 158, 11, 0));\n}\n\n.from-blue-400 {\n  --tw-gradient-from: #60a5fa;\n  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(96, 165, 250, 0));\n}\n\n.from-purple-500 {\n  --tw-gradient-from: #8b5cf6;\n  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(139, 92, 246, 0));\n}\n\n.to-yellow-400 {\n  --tw-gradient-to: #fbbf24;\n}\n\n.to-green-300 {\n  --tw-gradient-to: #6ee7b7;\n}\n\n.to-blue-400 {\n  --tw-gradient-to: #60a5fa;\n}\n\n.to-pink-400 {\n  --tw-gradient-to: #f472b6;\n}\n\n.border-transparent {\n  border-color: transparent;\n}\n\n.rounded-md {\n  border-radius: 0.375rem;\n}\n\n.rounded-xl {\n  border-radius: 0.75rem;\n}\n\n.rounded-full {\n  border-radius: 9999px;\n}\n\n.rounded-t-xl {\n  border-top-left-radius: 0.75rem;\n  border-top-right-radius: 0.75rem;\n}\n\n.rounded-b-xl {\n  border-bottom-right-radius: 0.75rem;\n  border-bottom-left-radius: 0.75rem;\n}\n\n.border {\n  border-width: 1px;\n}\n\n.flex {\n  display: flex;\n}\n\n.table {\n  display: table;\n}\n\n.grid {\n  display: grid;\n}\n\n.place-self-center {\n  place-self: center;\n}\n\n.items-center {\n  align-items: center;\n}\n\n.justify-items-stretch {\n  justify-items: stretch;\n}\n\n.justify-center {\n  justify-content: center;\n}\n\n.justify-self-center {\n  justify-self: center;\n}\n\n.flex-auto {\n  flex: 1 1 auto;\n}\n\n.flex-none {\n  flex: none;\n}\n\n.font-medium {\n  font-weight: 500;\n}\n\n.font-semibold {\n  font-weight: 600;\n}\n\n.h-12 {\n  height: 3rem;\n}\n\n.h-14 {\n  height: 3.5rem;\n}\n\n.text-xs {\n  font-size: 0.75rem;\n  line-height: 1rem;\n}\n\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n\n.text-base {\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n\n.text-lg {\n  font-size: 1.125rem;\n  line-height: 1.75rem;\n}\n\n.leading-6 {\n  line-height: 1.5rem;\n}\n\n.leading-8 {\n  line-height: 2rem;\n}\n\n.list-none {\n  list-style-type: none;\n}\n\n.m-4 {\n  margin: 1rem;\n}\n\n.mb-5 {\n  margin-bottom: 1.25rem;\n}\n\n.opacity-50 {\n  opacity: 0.5;\n}\n\n.hover\\:opacity-75:hover {\n  opacity: 0.75;\n}\n\n.p-6 {\n  padding: 1.5rem;\n}\n\n.py-3 {\n  padding-top: 0.75rem;\n  padding-bottom: 0.75rem;\n}\n\n.px-3 {\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n}\n\n.px-6 {\n  padding-left: 1.5rem;\n  padding-right: 1.5rem;\n}\n\n.py-8 {\n  padding-top: 2rem;\n  padding-bottom: 2rem;\n}\n\n.px-8 {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.bottom-0 {\n  bottom: 0px;\n}\n\n* {\n  --tw-shadow: 0 0 #0000;\n}\n\n.shadow-md {\n  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n\n.hover\\:shadow-lg:hover {\n  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n\n* {\n  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgba(59, 130, 246, 0.5);\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n}\n\n.fill-current {\n  fill: currentColor;\n}\n\n.text-center {\n  text-align: center;\n}\n\n.text-right {\n  text-align: right;\n}\n\n.text-white {\n  --tw-text-opacity: 1;\n  color: rgba(255, 255, 255, var(--tw-text-opacity));\n}\n\n.text-gray-400 {\n  --tw-text-opacity: 1;\n  color: rgba(156, 163, 175, var(--tw-text-opacity));\n}\n\n.text-gray-900 {\n  --tw-text-opacity: 1;\n  color: rgba(17, 24, 39, var(--tw-text-opacity));\n}\n\n.text-indigo-700 {\n  --tw-text-opacity: 1;\n  color: rgba(67, 56, 202, var(--tw-text-opacity));\n}\n\n.text-purple-100 {\n  --tw-text-opacity: 1;\n  color: rgba(237, 233, 254, var(--tw-text-opacity));\n}\n\n.w-12 {\n  width: 3rem;\n}\n\n.w-14 {\n  width: 3.5rem;\n}\n\n.w-1\\/2 {\n  width: 50%;\n}\n\n.w-full {\n  width: 100%;\n}\n\n.transition-opacity {\n  transition-property: opacity;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n\n.duration-200 {\n  transition-duration: 200ms;\n}\n\n@-webkit-keyframes spin {\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes spin {\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@-webkit-keyframes ping {\n  75%, 100% {\n    transform: scale(2);\n    opacity: 0;\n  }\n}\n\n@keyframes ping {\n  75%, 100% {\n    transform: scale(2);\n    opacity: 0;\n  }\n}\n\n@-webkit-keyframes pulse {\n  50% {\n    opacity: .5;\n  }\n}\n\n@keyframes pulse {\n  50% {\n    opacity: .5;\n  }\n}\n\n@-webkit-keyframes bounce {\n  0%, 100% {\n    transform: translateY(-25%);\n    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);\n            animation-timing-function: cubic-bezier(0.8,0,1,1);\n  }\n\n  50% {\n    transform: none;\n    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);\n            animation-timing-function: cubic-bezier(0,0,0.2,1);\n  }\n}\n\n@keyframes bounce {\n  0%, 100% {\n    transform: translateY(-25%);\n    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);\n            animation-timing-function: cubic-bezier(0.8,0,1,1);\n  }\n\n  50% {\n    transform: none;\n    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);\n            animation-timing-function: cubic-bezier(0,0,0.2,1);\n  }\n}\n\n.htalk_loading{\n  min-height:200px;\n}\n\n.htalk_part{\n  min-height:100px;\n}\n\n.htalk_loader {\n  background-color: #90939920;\n  position: absolute;\n  width: 64px;\n  height: 64px;\n  border-radius: 50%;\n  perspective: 800px;\n}\n\n.htalk_inner {\n  position: absolute;\n  box-sizing: border-box;\n  width: 100%;\n  height: 100%;\n  border-radius: 50%;\n}\n\n.htalk_inner.one {\n  left: 0%;\n  top: 0%;\n  -webkit-animation: rotate-one 1s linear infinite;\n          animation: rotate-one 1s linear infinite;\n  border-bottom: 3px solid #888;\n  position: absolute;\n}\n\n.htalk_inner.two {\n  right: 0%;\n  top: 0%;\n  -webkit-animation: rotate-two 1s linear infinite;\n          animation: rotate-two 1s linear infinite;\n  border-right: 3px solid #888;\n  position: absolute;\n}\n\n.htalk_inner.three {\n  right: 0%;\n  bottom: 0%;\n  -webkit-animation: rotate-three 1s linear infinite;\n          animation: rotate-three 1s linear infinite;\n  border-top: 3px solid #888;\n  position: absolute;\n}\n\n@-webkit-keyframes rotate-one {\n  0% {\n    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);\n  }\n\n  100% {\n    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);\n  }\n}\n\n@keyframes rotate-one {\n  0% {\n    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);\n  }\n\n  100% {\n    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);\n  }\n}\n\n@-webkit-keyframes rotate-two {\n  0% {\n    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);\n  }\n\n  100% {\n    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);\n  }\n}\n\n@keyframes rotate-two {\n  0% {\n    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);\n  }\n\n  100% {\n    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);\n  }\n}\n\n@-webkit-keyframes rotate-three {\n  0% {\n    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);\n  }\n\n  100% {\n    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);\n  }\n}\n\n@keyframes rotate-three {\n  0% {\n    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);\n  }\n\n  100% {\n    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);\n  }\n}\n\n@media (min-width: 768px) {\n  .md\\:text-lg {\n    font-size: 1.125rem;\n    line-height: 1.75rem;\n  }\n\n  .md\\:text-xl {\n    font-size: 1.25rem;\n    line-height: 1.75rem;\n  }\n\n  .md\\:leading-8 {\n    line-height: 2rem;\n  }\n\n  .md\\:m-3 {\n    margin: 0.75rem;\n  }\n\n  .md\\:p-10 {\n    padding: 2.5rem;\n  }\n\n  .md\\:py-4 {\n    padding-top: 1rem;\n    padding-bottom: 1rem;\n  }\n\n  .md\\:px-4 {\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n\n  .md\\:py-6 {\n    padding-top: 1.5rem;\n    padding-bottom: 1.5rem;\n  }\n\n  .md\\:px-10 {\n    padding-left: 2.5rem;\n    padding-right: 2.5rem;\n  }\n\n  .md\\:w-1\\/4 {\n    width: 25%;\n  }\n\n  .md\\:w-5\\/6 {\n    width: 83.333333%;\n  }\n}\n\n@media (min-width: 1024px) {\n  .lg\\:w-1\\/5 {\n    width: 20%;\n  }\n\n  .lg\\:w-11\\/12 {\n    width: 91.666667%;\n  }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/*! tailwindcss v2.1.2 | MIT License | https://tailwindcss.com */\n\n/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */\n\n/*\nDocument\n========\n*/\n\n/**\nUse a better box model (opinionated).\n*/\n\n*,\n::before,\n::after {\n  box-sizing: border-box;\n}\n\n/**\nUse a more readable tab size (opinionated).\n*/\n\nhtml {\n  -moz-tab-size: 4;\n  -o-tab-size: 4;\n     tab-size: 4;\n}\n\n/**\n1. Correct the line height in all browsers.\n2. Prevent adjustments of font size after orientation changes in iOS.\n*/\n\nhtml {\n  line-height: 1.15; /* 1 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n}\n\n/*\nSections\n========\n*/\n\n/**\nRemove the margin in all browsers.\n*/\n\nbody {\n  margin: 0;\n}\n\n/**\nImprove consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)\n*/\n\nbody {\n  font-family:\n\t\tsystem-ui,\n\t\t-apple-system, /* Firefox supports this but not yet `system-ui` */\n\t\t'Segoe UI',\n\t\tRoboto,\n\t\tHelvetica,\n\t\tArial,\n\t\tsans-serif,\n\t\t'Apple Color Emoji',\n\t\t'Segoe UI Emoji';\n}\n\n/*\nGrouping content\n================\n*/\n\n/**\n1. Add the correct height in Firefox.\n2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)\n*/\n\nhr {\n  height: 0; /* 1 */\n  color: inherit; /* 2 */\n}\n\n/*\nText-level semantics\n====================\n*/\n\n/**\nAdd the correct text decoration in Chrome, Edge, and Safari.\n*/\n\nabbr[title] {\n  -webkit-text-decoration: underline dotted;\n          text-decoration: underline dotted;\n}\n\n/**\nAdd the correct font weight in Edge and Safari.\n*/\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/**\n1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)\n2. Correct the odd 'em' font sizing in all browsers.\n*/\n\ncode,\nkbd,\nsamp,\npre {\n  font-family:\n\t\tui-monospace,\n\t\tSFMono-Regular,\n\t\tConsolas,\n\t\t'Liberation Mono',\n\t\tMenlo,\n\t\tmonospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/**\nAdd the correct font size in all browsers.\n*/\n\nsmall {\n  font-size: 80%;\n}\n\n/**\nPrevent 'sub' and 'sup' elements from affecting the line height in all browsers.\n*/\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/*\nTabular data\n============\n*/\n\n/**\n1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)\n2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)\n*/\n\ntable {\n  text-indent: 0; /* 1 */\n  border-color: inherit; /* 2 */\n}\n\n/*\nForms\n=====\n*/\n\n/**\n1. Change the font styles in all browsers.\n2. Remove the margin in Firefox and Safari.\n*/\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: inherit; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: 1.15; /* 1 */\n  margin: 0; /* 2 */\n}\n\n/**\nRemove the inheritance of text transform in Edge and Firefox.\n1. Remove the inheritance of text transform in Firefox.\n*/\n\nbutton,\nselect { /* 1 */\n  text-transform: none;\n}\n\n/**\nCorrect the inability to style clickable types in iOS and Safari.\n*/\n\nbutton {\n  -webkit-appearance: button;\n}\n\n/**\nRemove the inner border and padding in Firefox.\n*/\n\n/**\nRestore the focus styles unset by the previous rule.\n*/\n\n/**\nRemove the additional ':invalid' styles in Firefox.\nSee: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737\n*/\n\n/**\nRemove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.\n*/\n\nlegend {\n  padding: 0;\n}\n\n/**\nAdd the correct vertical alignment in Chrome and Firefox.\n*/\n\nprogress {\n  vertical-align: baseline;\n}\n\n/**\nCorrect the cursor style of increment and decrement buttons in Safari.\n*/\n\n/**\n1. Correct the odd appearance in Chrome and Safari.\n2. Correct the outline style in Safari.\n*/\n\n/**\nRemove the inner padding in Chrome and Safari on macOS.\n*/\n\n/**\n1. Correct the inability to style clickable types in iOS and Safari.\n2. Change font properties to 'inherit' in Safari.\n*/\n\n/*\nInteractive\n===========\n*/\n\n/*\nAdd the correct display in Chrome and Safari.\n*/\n\nsummary {\n  display: list-item;\n}\n\n/**\n * Manually forked from SUIT CSS Base: https://github.com/suitcss/base\n * A thin layer on top of normalize.css that provides a starting point more\n * suitable for web applications.\n */\n\n/**\n * Removes the default spacing and border for appropriate elements.\n */\n\nblockquote,\ndl,\ndd,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nhr,\nfigure,\np,\npre {\n  margin: 0;\n}\n\nbutton {\n  background-color: transparent;\n  background-image: none;\n}\n\n/**\n * Work around a Firefox/IE bug where the transparent `button` background\n * results in a loss of the default `button` focus styles.\n */\n\nbutton:focus {\n  outline: 1px dotted;\n  outline: 5px auto -webkit-focus-ring-color;\n}\n\nfieldset {\n  margin: 0;\n  padding: 0;\n}\n\nol,\nul {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n/**\n * Tailwind custom reset styles\n */\n\n/**\n * 1. Use the user's configured `sans` font-family (with Tailwind's default\n *    sans-serif font stack as a fallback) as a sane default.\n * 2. Use Tailwind's default \"normal\" line-height so the user isn't forced\n *    to override it to ensure consistency even when using the default theme.\n */\n\nhtml {\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"; /* 1 */\n  line-height: 1.5; /* 2 */\n}\n\n/**\n * Inherit font-family and line-height from `html` so users can set them as\n * a class directly on the `html` element.\n */\n\nbody {\n  font-family: inherit;\n  line-height: inherit;\n}\n\n/**\n * 1. Prevent padding and border from affecting element width.\n *\n *    We used to set this in the html element and inherit from\n *    the parent element for everything else. This caused issues\n *    in shadow-dom-enhanced elements like <details> where the content\n *    is wrapped by a div with box-sizing set to `content-box`.\n *\n *    https://github.com/mozdevs/cssremedy/issues/4\n *\n *\n * 2. Allow adding a border to an element by just adding a border-width.\n *\n *    By default, the way the browser specifies that an element should have no\n *    border is by setting it's border-style to `none` in the user-agent\n *    stylesheet.\n *\n *    In order to easily add borders to elements by just setting the `border-width`\n *    property, we change the default border-style for all elements to `solid`, and\n *    use border-width to hide them instead. This way our `border` utilities only\n *    need to set the `border-width` property instead of the entire `border`\n *    shorthand, making our border utilities much more straightforward to compose.\n *\n *    https://github.com/tailwindcss/tailwindcss/pull/116\n */\n\n*,\n::before,\n::after {\n  box-sizing: border-box; /* 1 */\n  border-width: 0; /* 2 */\n  border-style: solid; /* 2 */\n  border-color: #e5e7eb; /* 2 */\n}\n\n/*\n * Ensure horizontal rules are visible by default\n */\n\nhr {\n  border-top-width: 1px;\n}\n\n/**\n * Undo the `border-style: none` reset that Normalize applies to images so that\n * our `border-{width}` utilities have the expected effect.\n *\n * The Normalize reset is unnecessary for us since we default the border-width\n * to 0 on all elements.\n *\n * https://github.com/tailwindcss/tailwindcss/issues/362\n */\n\nimg {\n  border-style: solid;\n}\n\ntextarea {\n  resize: vertical;\n}\n\ninput::-moz-placeholder, textarea::-moz-placeholder {\n  opacity: 1;\n  color: #9ca3af;\n}\n\ninput:-ms-input-placeholder, textarea:-ms-input-placeholder {\n  opacity: 1;\n  color: #9ca3af;\n}\n\ninput::placeholder,\ntextarea::placeholder {\n  opacity: 1;\n  color: #9ca3af;\n}\n\nbutton {\n  cursor: pointer;\n}\n\ntable {\n  border-collapse: collapse;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-size: inherit;\n  font-weight: inherit;\n}\n\n/**\n * Reset links to optimize for opt-in styling instead of\n * opt-out.\n */\n\na {\n  color: inherit;\n  text-decoration: inherit;\n}\n\n/**\n * Reset form element properties that are easy to forget to\n * style explicitly so you don't inadvertently introduce\n * styles that deviate from your design system. These styles\n * supplement a partial reset that is already applied by\n * normalize.css.\n */\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  padding: 0;\n  line-height: inherit;\n  color: inherit;\n}\n\n/**\n * Use the configured 'mono' font family for elements that\n * are expected to be rendered with a monospace font, falling\n * back to the system monospace stack if there is no configured\n * 'mono' font family.\n */\n\npre,\ncode,\nkbd,\nsamp {\n  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace;\n}\n\n/**\n * Make replaced elements `display: block` by default as that's\n * the behavior you want almost all of the time. Inspired by\n * CSS Remedy, with `svg` added as well.\n *\n * https://github.com/mozdevs/cssremedy/issues/14\n */\n\nimg,\nsvg,\nvideo,\ncanvas,\naudio,\niframe,\nembed,\nobject {\n  display: block;\n  vertical-align: middle;\n}\n\n/**\n * Constrain images and videos to the parent width and preserve\n * their intrinsic aspect ratio.\n *\n * https://github.com/mozdevs/cssremedy/issues/14\n */\n\nimg,\nvideo {\n  max-width: 100%;\n  height: auto;\n}\n\n.space-x-4 > :not([hidden]) ~ :not([hidden]) {\n  --tw-space-x-reverse: 0;\n  margin-right: calc(1rem * var(--tw-space-x-reverse));\n  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));\n}\n\n.sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n}\n\n.bg-white {\n  --tw-bg-opacity: 1;\n  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));\n}\n\n.bg-indigo-100 {\n  --tw-bg-opacity: 1;\n  background-color: rgba(224, 231, 255, var(--tw-bg-opacity));\n}\n\n.bg-purple-100 {\n  --tw-bg-opacity: 1;\n  background-color: rgba(237, 233, 254, var(--tw-bg-opacity));\n}\n\n.hover\\:bg-indigo-200:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgba(199, 210, 254, var(--tw-bg-opacity));\n}\n\n.dark .dark\\:bg-gray-800 {\n  --tw-bg-opacity: 1;\n  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));\n}\n\n.dark .dark\\:hover\\:bg-gray-600:hover {\n  --tw-bg-opacity: 1;\n  background-color: rgba(75, 85, 99, var(--tw-bg-opacity));\n}\n\n.bg-gradient-to-br {\n  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));\n}\n\n.from-red-400 {\n  --tw-gradient-from: #f87171;\n  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(248, 113, 113, 0));\n}\n\n.from-yellow-500 {\n  --tw-gradient-from: #f59e0b;\n  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(245, 158, 11, 0));\n}\n\n.from-blue-400 {\n  --tw-gradient-from: #60a5fa;\n  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(96, 165, 250, 0));\n}\n\n.from-purple-500 {\n  --tw-gradient-from: #8b5cf6;\n  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(139, 92, 246, 0));\n}\n\n.to-yellow-400 {\n  --tw-gradient-to: #fbbf24;\n}\n\n.to-green-300 {\n  --tw-gradient-to: #6ee7b7;\n}\n\n.to-blue-400 {\n  --tw-gradient-to: #60a5fa;\n}\n\n.to-pink-400 {\n  --tw-gradient-to: #f472b6;\n}\n\n.border-transparent {\n  border-color: transparent;\n}\n\n.rounded-md {\n  border-radius: 0.375rem;\n}\n\n.rounded-xl {\n  border-radius: 0.75rem;\n}\n\n.rounded-full {\n  border-radius: 9999px;\n}\n\n.rounded-t-xl {\n  border-top-left-radius: 0.75rem;\n  border-top-right-radius: 0.75rem;\n}\n\n.rounded-b-xl {\n  border-bottom-right-radius: 0.75rem;\n  border-bottom-left-radius: 0.75rem;\n}\n\n.border {\n  border-width: 1px;\n}\n\n.flex {\n  display: flex;\n}\n\n.table {\n  display: table;\n}\n\n.grid {\n  display: grid;\n}\n\n.place-self-center {\n  place-self: center;\n}\n\n.items-center {\n  align-items: center;\n}\n\n.justify-items-stretch {\n  justify-items: stretch;\n}\n\n.justify-center {\n  justify-content: center;\n}\n\n.justify-self-center {\n  justify-self: center;\n}\n\n.flex-auto {\n  flex: 1 1 auto;\n}\n\n.flex-none {\n  flex: none;\n}\n\n.font-medium {\n  font-weight: 500;\n}\n\n.font-semibold {\n  font-weight: 600;\n}\n\n.h-12 {\n  height: 3rem;\n}\n\n.h-14 {\n  height: 3.5rem;\n}\n\n.text-xs {\n  font-size: 0.75rem;\n  line-height: 1rem;\n}\n\n.text-sm {\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n}\n\n.text-base {\n  font-size: 1rem;\n  line-height: 1.5rem;\n}\n\n.text-lg {\n  font-size: 1.125rem;\n  line-height: 1.75rem;\n}\n\n.leading-6 {\n  line-height: 1.5rem;\n}\n\n.leading-8 {\n  line-height: 2rem;\n}\n\n.list-none {\n  list-style-type: none;\n}\n\n.m-4 {\n  margin: 1rem;\n}\n\n.mb-5 {\n  margin-bottom: 1.25rem;\n}\n\n.opacity-50 {\n  opacity: 0.5;\n}\n\n.hover\\:opacity-75:hover {\n  opacity: 0.75;\n}\n\n.p-6 {\n  padding: 1.5rem;\n}\n\n.py-3 {\n  padding-top: 0.75rem;\n  padding-bottom: 0.75rem;\n}\n\n.px-3 {\n  padding-left: 0.75rem;\n  padding-right: 0.75rem;\n}\n\n.px-6 {\n  padding-left: 1.5rem;\n  padding-right: 1.5rem;\n}\n\n.py-8 {\n  padding-top: 2rem;\n  padding-bottom: 2rem;\n}\n\n.px-8 {\n  padding-left: 2rem;\n  padding-right: 2rem;\n}\n\n.bottom-0 {\n  bottom: 0px;\n}\n\n* {\n  --tw-shadow: 0 0 #0000;\n}\n\n.shadow-md {\n  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n\n.hover\\:shadow-lg:hover {\n  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);\n  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\n}\n\n* {\n  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);\n  --tw-ring-offset-width: 0px;\n  --tw-ring-offset-color: #fff;\n  --tw-ring-color: rgba(59, 130, 246, 0.5);\n  --tw-ring-offset-shadow: 0 0 #0000;\n  --tw-ring-shadow: 0 0 #0000;\n}\n\n.fill-current {\n  fill: currentColor;\n}\n\n.text-center {\n  text-align: center;\n}\n\n.text-right {\n  text-align: right;\n}\n\n.text-white {\n  --tw-text-opacity: 1;\n  color: rgba(255, 255, 255, var(--tw-text-opacity));\n}\n\n.text-gray-400 {\n  --tw-text-opacity: 1;\n  color: rgba(156, 163, 175, var(--tw-text-opacity));\n}\n\n.text-gray-900 {\n  --tw-text-opacity: 1;\n  color: rgba(17, 24, 39, var(--tw-text-opacity));\n}\n\n.text-indigo-700 {\n  --tw-text-opacity: 1;\n  color: rgba(67, 56, 202, var(--tw-text-opacity));\n}\n\n.text-purple-100 {\n  --tw-text-opacity: 1;\n  color: rgba(237, 233, 254, var(--tw-text-opacity));\n}\n\n.dark .dark\\:text-gray-300 {\n  --tw-text-opacity: 1;\n  color: rgba(209, 213, 219, var(--tw-text-opacity));\n}\n\n.w-12 {\n  width: 3rem;\n}\n\n.w-14 {\n  width: 3.5rem;\n}\n\n.w-1\\/2 {\n  width: 50%;\n}\n\n.w-full {\n  width: 100%;\n}\n\n.transition-opacity {\n  transition-property: opacity;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  transition-duration: 150ms;\n}\n\n.duration-200 {\n  transition-duration: 200ms;\n}\n\n@-webkit-keyframes spin {\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@keyframes spin {\n  to {\n    transform: rotate(360deg);\n  }\n}\n\n@-webkit-keyframes ping {\n  75%, 100% {\n    transform: scale(2);\n    opacity: 0;\n  }\n}\n\n@keyframes ping {\n  75%, 100% {\n    transform: scale(2);\n    opacity: 0;\n  }\n}\n\n@-webkit-keyframes pulse {\n  50% {\n    opacity: .5;\n  }\n}\n\n@keyframes pulse {\n  50% {\n    opacity: .5;\n  }\n}\n\n@-webkit-keyframes bounce {\n  0%, 100% {\n    transform: translateY(-25%);\n    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);\n            animation-timing-function: cubic-bezier(0.8,0,1,1);\n  }\n\n  50% {\n    transform: none;\n    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);\n            animation-timing-function: cubic-bezier(0,0,0.2,1);\n  }\n}\n\n@keyframes bounce {\n  0%, 100% {\n    transform: translateY(-25%);\n    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);\n            animation-timing-function: cubic-bezier(0.8,0,1,1);\n  }\n\n  50% {\n    transform: none;\n    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);\n            animation-timing-function: cubic-bezier(0,0,0.2,1);\n  }\n}\n\n.htalk_loading{\n  min-height:200px;\n}\n\n.htalk_part{\n  min-height:100px;\n}\n\n.htalk_loader {\n  background-color: #90939920;\n  position: absolute;\n  width: 64px;\n  height: 64px;\n  border-radius: 50%;\n  perspective: 800px;\n}\n\n.htalk_inner {\n  position: absolute;\n  box-sizing: border-box;\n  width: 100%;\n  height: 100%;\n  border-radius: 50%;\n}\n\n.htalk_inner.one {\n  left: 0%;\n  top: 0%;\n  -webkit-animation: rotate-one 1s linear infinite;\n          animation: rotate-one 1s linear infinite;\n  border-bottom: 3px solid #888;\n  position: absolute;\n}\n\n.htalk_inner.two {\n  right: 0%;\n  top: 0%;\n  -webkit-animation: rotate-two 1s linear infinite;\n          animation: rotate-two 1s linear infinite;\n  border-right: 3px solid #888;\n  position: absolute;\n}\n\n.htalk_inner.three {\n  right: 0%;\n  bottom: 0%;\n  -webkit-animation: rotate-three 1s linear infinite;\n          animation: rotate-three 1s linear infinite;\n  border-top: 3px solid #888;\n  position: absolute;\n}\n\n@-webkit-keyframes rotate-one {\n  0% {\n    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);\n  }\n\n  100% {\n    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);\n  }\n}\n\n@keyframes rotate-one {\n  0% {\n    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);\n  }\n\n  100% {\n    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);\n  }\n}\n\n@-webkit-keyframes rotate-two {\n  0% {\n    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);\n  }\n\n  100% {\n    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);\n  }\n}\n\n@keyframes rotate-two {\n  0% {\n    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);\n  }\n\n  100% {\n    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);\n  }\n}\n\n@-webkit-keyframes rotate-three {\n  0% {\n    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);\n  }\n\n  100% {\n    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);\n  }\n}\n\n@keyframes rotate-three {\n  0% {\n    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);\n  }\n\n  100% {\n    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);\n  }\n}\n\n@media (min-width: 768px) {\n  .md\\:text-lg {\n    font-size: 1.125rem;\n    line-height: 1.75rem;\n  }\n\n  .md\\:text-xl {\n    font-size: 1.25rem;\n    line-height: 1.75rem;\n  }\n\n  .md\\:leading-8 {\n    line-height: 2rem;\n  }\n\n  .md\\:m-3 {\n    margin: 0.75rem;\n  }\n\n  .md\\:p-10 {\n    padding: 2.5rem;\n  }\n\n  .md\\:py-4 {\n    padding-top: 1rem;\n    padding-bottom: 1rem;\n  }\n\n  .md\\:px-4 {\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n\n  .md\\:py-6 {\n    padding-top: 1.5rem;\n    padding-bottom: 1.5rem;\n  }\n\n  .md\\:px-10 {\n    padding-left: 2.5rem;\n    padding-right: 2.5rem;\n  }\n\n  .md\\:w-1\\/4 {\n    width: 25%;\n  }\n\n  .md\\:w-5\\/6 {\n    width: 83.333333%;\n  }\n}\n\n@media (min-width: 1024px) {\n  .lg\\:w-1\\/5 {\n    width: 20%;\n  }\n\n  .lg\\:w-11\\/12 {\n    width: 91.666667%;\n  }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3210,7 +3210,7 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ 319:
+/***/ 510:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3223,9 +3223,9 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// CONCATENATED MODULE: ./node_modules/_raw-loader@4.0.2@raw-loader/dist/cjs.js!./src/html/init.html
-/* harmony default export */ const init = ("<div class=\"grid justify-items-stretch\">\n    <div class=\"grid justify-items-stretch\" id=\"<!--init-->\">\n\n    </div>\n\n    <div class=\"htalk_loading\" id=\"<!--loading-->\" style=\"display: none;\">\n        <div class=\"htalk_part\">\n            <div style=\"display: flex;justify-content: center;\">\n                <div class=\"htalk_loader\">\n                    <div class=\"htalk_inner one\"></div>\n                    <div class=\"htalk_inner two\"></div>\n                    <div class=\"htalk_inner three\"></div>\n                </div>\n            </div>\n        </div>\n        <p class=\"text-center text-md\"><!--lang.LOADING--></p>\n    </div>\n    <button id=\"<!--next-->\"\n        class=\"w-1/2  md:w-1/4 lg:w-1/5 flex items-center justify-self-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10\">\n        <!--lang.NEXT-->\n    </button>\n    <p class=\"bottom-0 text-right text-gray-400 text-xs\"><!--ver--></p>\n\n</div>");
+/* harmony default export */ const init = ("<div class=\"grid justify-items-stretch\">\n    <div class=\"grid justify-items-stretch\" id=\"<!--init-->\">\n\n    </div>\n\n    <div class=\"htalk_loading\" id=\"<!--loading-->\" style=\"display: none;\">\n        <div class=\"htalk_part\">\n            <div style=\"display: flex;justify-content: center;\">\n                <div class=\"htalk_loader\">\n                    <div class=\"htalk_inner one\"></div>\n                    <div class=\"htalk_inner two\"></div>\n                    <div class=\"htalk_inner three\"></div>\n                </div>\n            </div>\n        </div>\n        <p class=\"text-center text-md\"><!--lang.LOADING--></p>\n    </div>\n    <button id=\"<!--next-->\"\n        class=\" w-1/2  md:w-1/4 lg:w-1/5 flex items-center justify-self-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 dark:text-gray-300 bg-indigo-100 dark:bg-gray-800  dark:hover:bg-gray-600  hover:bg-indigo-200 md:py-4 md:text-lg md:px-10\">\n        <!--lang.NEXT-->\n    </button>\n    <p class=\"bottom-0 text-right text-gray-400 text-xs\"><!--ver--></p>\n\n</div>");
 ;// CONCATENATED MODULE: ./node_modules/_raw-loader@4.0.2@raw-loader/dist/cjs.js!./src/html/ctx.html
-/* harmony default export */ const ctx = ("<li id=\"<!--id-->\" class=\"m-4 md:m-3 px-3 md:px-4 flex-none list-none justify-self-center grid w-full md:w-5/6 lg:w-11/12\">\n    <figure class=\"shadow-md hover:shadow-lg rounded-xl w-full lg:w-11/12 place-self-center\">\n        <blockquote\n            class=\"rounded-t-xl bg-white px-6 py-8 md:p-10 text-lg md:text-xl leading-8 md:leading-8 font-semibold text-gray-900\">\n            <svg width=\"45\" height=\"36\" class=\"mb-5 fill-current text-purple-100\">\n                <path\n                    d=\"M13.415.001C6.07 5.185.887 13.681.887 23.041c0 7.632 4.608 12.096 9.936 12.096 5.04 0 8.784-4.032 8.784-8.784 0-4.752-3.312-8.208-7.632-8.208-.864 0-2.016.144-2.304.288.72-4.896 5.328-10.656 9.936-13.536L13.415.001zm24.768 0c-7.2 5.184-12.384 13.68-12.384 23.04 0 7.632 4.608 12.096 9.936 12.096 4.896 0 8.784-4.032 8.784-8.784 0-4.752-3.456-8.208-7.776-8.208-.864 0-1.872.144-2.16.288.72-4.896 5.184-10.656 9.792-13.536L38.183.001z\">\n                </path>\n            </svg>\n            <p><!--init--></p>\n        </blockquote>\n        <figcaption\n            class=\"flex items-center space-x-4 p-6 md:px-10 md:py-6 bg-gradient-to-br rounded-b-xl leading-6 font-semibold text-white <!--from_color--> <!--to_color-->\">\n            <div class=\"flex-none w-14 h-14 bg-white rounded-full flex items-center justify-center\"><img\n                    src=\"<!--avatar-->\" class=\"w-12 h-12 rounded-full bg-purple-100\" loading=\"lazy\">\n            </div>\n            <div class=\"flex-auto\"><!--name--><br><span class=\"text-white-100\"><!--info--></span></div>\n            <cite class=\"flex\"><a id=\"<!--id-->_love\" href=\"javascript:void(0)\" class=\"opacity-50 hover:opacity-75 transition-opacity duration-200\">\n                <span class=\"sr-only\">LOVE</span>\n                <!--love-->\n            </a></cite><p class=\"text-white-100 text-sm\"><!--loved--></p>\n        </figcaption>\n    </figure>\n</li>");
+/* harmony default export */ const ctx = ("<li id=\"<!--id-->\" class=\"m-4 md:m-3 px-3 md:px-4 flex-none list-none justify-self-center grid w-full md:w-5/6 lg:w-11/12\">\n    <figure class=\"shadow-md hover:shadow-lg rounded-xl w-full lg:w-11/12 place-self-center\">\n        <blockquote\n            class=\"rounded-t-xl bg-white px-6 py-8 md:p-10 text-lg md:text-xl leading-8 md:leading-8 font-semibold text-gray-900\">\n            <svg width=\"45\" height=\"36\" class=\"mb-5 fill-current text-purple-100\">\n                <path\n                    d=\"M13.415.001C6.07 5.185.887 13.681.887 23.041c0 7.632 4.608 12.096 9.936 12.096 5.04 0 8.784-4.032 8.784-8.784 0-4.752-3.312-8.208-7.632-8.208-.864 0-2.016.144-2.304.288.72-4.896 5.328-10.656 9.936-13.536L13.415.001zm24.768 0c-7.2 5.184-12.384 13.68-12.384 23.04 0 7.632 4.608 12.096 9.936 12.096 4.896 0 8.784-4.032 8.784-8.784 0-4.752-3.456-8.208-7.776-8.208-.864 0-1.872.144-2.16.288.72-4.896 5.184-10.656 9.792-13.536L38.183.001z\">\n                </path>\n            </svg>\n            <p><!--init--></p>\n        </blockquote>\n        <figcaption\n            class=\"flex items-center space-x-4 p-6 md:px-10 md:py-6 bg-gradient-to-br rounded-b-xl leading-6 font-semibold text-white <!--from_color--> <!--to_color-->\">\n            <div class=\"flex-none w-14 h-14 bg-white rounded-full flex items-center justify-center\"><img\n                    src=\"<!--avatar-->\" class=\"w-12 h-12 rounded-full bg-purple-100\" loading=\"lazy\">\n            </div>\n            <div class=\"flex-auto\"><!--name--><br><span class=\"text-white-100\"><!--info--></span></div>\n            <cite class=\"flex\"><a id=\"<!--id-->_love\" href=\"javascript:void(0)\" class=\"opacity-50 hover:opacity-75 transition-opacity duration-200\">\n                <span class=\"sr-only\" >LOVE</span>\n               <div id=\"<!--id-->_loveicon\">\n                <!--love-->\n               </div>\n            </a></cite><p class=\"text-white-100 text-sm\" id=\"<!--id-->_loved\"><!--loved--></p>\n        </figcaption>\n    </figure>\n</li>");
 ;// CONCATENATED MODULE: ./src/js/loadS.js
 const loadJS = (src, callback) => {
     var script = document.createElement('script'),
@@ -3257,8 +3257,24 @@ const addCSS = (n) => {
     var head = document.getElementsByTagName('head')[0];
     head.appendChild(style);
 }
+;// CONCATENATED MODULE: ./node_modules/_raw-loader@4.0.2@raw-loader/dist/cjs.js!./src/html/love.html
+/* harmony default export */ const love = ("<svg t=\"1621679960406\" class=\"icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"4230\" width=\"32\" height=\"32\"><path d=\"M707.392 93.355c-77.264 0-149.104 38.759-196.389 102.673-47.258-63.929-119.083-102.673-196.389-102.673-139.281 0-252.596 123.888-252.596 276.181 0 90.853 40.585 154.588 73.209 205.797 94.816 148.743 333.217 333.849 343.314 341.653 9.727 7.52 21.1 11.282 32.447 11.282 11.373 0 22.73-3.761 32.447-11.282 10.11-7.804 248.524-192.91 343.313-341.653 32.64-51.209 73.238-114.944 73.238-205.797-0.001-152.292-113.316-276.181-252.596-276.181zM840.628 540.182c-90.254 141.629-329.64 326.614-329.64 326.614s-239.359-184.986-329.641-326.614c-33.296-52.287-63.11-101.983-63.11-170.647 0-118.568 87.912-214.725 196.376-214.725 80.155 0 148.967 52.588 179.494 127.875l0-0.375 0.082 0c2.274 7.851 8.905 13.575 16.798 13.575 7.921 0 14.552-5.723 16.812-13.575l0.232 0c30.597-75.062 99.313-127.499 179.359-127.499 108.438 0 196.376 96.157 196.376 214.725 0 68.663-29.816 118.359-63.14 170.647z\" p-id=\"4231\" fill=\"#ffffff\"></path></svg>");
 ;// CONCATENATED MODULE: ./node_modules/_raw-loader@4.0.2@raw-loader/dist/cjs.js!./src/html/fill_love.html
 /* harmony default export */ const fill_love = ("<svg t=\"1621679972569\" class=\"icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"4467\" width=\"32\" height=\"32\"><path d=\"M729.068827 119.55798c-94.686523 0-176.905082 48.314379-217.069851 118.640074-40.163745-70.325695-122.382305-118.640074-217.044268-118.640074-143.767358 0-229.665727 123.660414-229.665727 243.219417 0 283.128359 415.870616 527.841803 433.576883 538.126031 4.062526 2.363837 8.584516 3.538593 13.132088 3.538593 4.547573 0 9.070586-1.174756 13.132088-3.538593 17.706267-10.283204 433.576883-254.997672 433.576883-538.126031C958.708971 243.218394 872.811626 119.55798 729.068827 119.55798z\" p-id=\"4468\" fill=\"#ffffff\"></path></svg>");
+;// CONCATENATED MODULE: ./src/js/ls.js
+const ls = {
+    put: (key, value) => {
+        return localStorage.setItem(key, value);
+    },
+    get: (key) => {
+        return localStorage.getItem(key)
+    },
+    del: (key) => {
+        return localStorage.removeItem(key)
+    }
+}
+
+/* harmony default export */ const js_ls = (ls);
 ;// CONCATENATED MODULE: ./node_modules/_notyf@3.9.0@notyf/notyf.es.js
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -3705,7 +3721,7 @@ var Notyf = /** @class */ (function () {
 
 
 ;// CONCATENATED MODULE: ./src/i18n/zh_CN.json
-const zh_CN_namespaceObject = JSON.parse('{"HTALK_ERROR":"HTALK组件异常：","HTALK_WARN":"HTALK组件警告：${1}，这可能会带来意外的错误！","NONE_ELE":"ID为${1}的Element不存在！","NONE_ELEID":"没有指定Element的ID！","NONE_DOMAIN":"没有指定后端域名！","NONE_LIMIT":"没有指定限制的条数，已使用默认值10","NONE_COLOR":"没有指定颜色，已使用默认值","NEXT":"下一波","LOADING":"HTALK：加载中...","UNKNOW_ERROR":"后端返回了致命的错误 - ","WARN_VER":"后端与前端版本不匹配","NOMORE":"莫得更多了！","NONE_RECAP":"没有人机验证保护！","LOAD_RECAP_SUCCESS":"加载人机验证脚本成功！"}');
+const zh_CN_namespaceObject = JSON.parse('{"HTALK_ERROR":"HTALK组件异常：","HTALK_WARN":"HTALK组件警告：${1}，这可能会带来意外的错误！","NONE_ELE":"ID为${1}的Element不存在！","NONE_ELEID":"没有指定Element的ID！","NONE_DOMAIN":"没有指定后端域名！","NONE_LIMIT":"没有指定限制的条数，已使用默认值10","NONE_COLOR":"没有指定颜色，已使用默认值","NEXT":"下一波","LOADING":"HTALK：加载中...","UNKNOW_ERROR":"后端返回了致命的错误 - ","WARN_VER":"后端与前端版本不匹配","NOMORE":"莫得更多了！","NONE_RECAP":"没有人机验证保护！","LOAD_RECAP_SUCCESS":"加载人机验证脚本成功！","RECAPING":"正在进行人机验证","LOVING":"正在点赞id为{1}的说说","RECAP_ERROR":"人机验证失败！","LOVE_SUCCESS":"点赞id为{1}的说说成功！","LOVE_ERROR":"点赞id为{1}的说说失败！"}');
 ;// CONCATENATED MODULE: ./src/i18n/lang.js
 
 const all_lan = {
@@ -3752,14 +3768,14 @@ const thr = (c, n) => {
     throw `${lang.HTALK_ERROR}${n}`
 }
 const su = (c, n) => {
-    if (c.lgn > 3) {
+    if (c.lgn > 2) {
         b.success(n);
     }
     console.log(n)
 }
 
 const inf = (c, n) => {
-    if (c.lgn > 2) {
+    if (c.lgn > 1) {
         b.open({
             type: 'info',
             message: n
@@ -3769,7 +3785,7 @@ const inf = (c, n) => {
 }
 
 const wr = (c, n) => {
-    if (c.lgn > 1) {
+    if (c.lgn > 3) {
         b.open({
             type: 'warning',
             message: lang.HTALK_WARN.replace('${1}', n)
@@ -3792,26 +3808,42 @@ const getcode = (n,callback) => {
 ;// CONCATENATED MODULE: ./src/js/love.js
 
 
-const love = function (c, i) {
+
+
+
+const love_love = function (c, i) {
     this.c = c
     this.i = i
 }
 
-love.prototype.add = async function () {
-    inf(this.c, `正在进行人机验证`)
+love_love.prototype.add = async function () {
+    if (JSON.parse(js_ls.get(`htalk_${this.c.id}_cache`)).loved.indexOf(this.i) === -1) {
+        if (this.c.love) {
+            if (this.c.recaptcha) {
+                inf(this.c, lang.RECAPING)
+                try {
+                    js_getcode(this.c.recaptcha, async (token) => {
+                        inf(this.c, lang.LOVING.replace('{1}', this.i))
+                        await addlove(this, token)
+                    })
+                } catch (n) {
+                    thr(this.c, lang.RECAP_ERROR)
+                }
+            } else {
 
-    if (this.c.love) {
-        if (this.c.recaptcha) {
-            js_getcode(this.c.recaptcha, async (token) => {
-                inf(this.c, `正在点赞id为${this.i}的说说`)
-                await addlove(this, token)
-            })
+
+                inf(this.c, lang.LOVING.replace('{1}', this.i))
+                await addlove(this)
+            }
         }
-    }
 
+    } else {
+        thr(this.c, '你已经点赞过啦！')
+    }
 }
 
 const addlove = async (that, token) => {
+    if (!token) { token = '' }
     console.log(token)
     const rep = await (await (fetch(
         `https://${that.c.domain}/hpp/api/talk/htalk`,
@@ -3819,13 +3851,24 @@ const addlove = async (that, token) => {
             method: "POST",
             body: JSON.stringify({
                 action: "love",
-                id: that.i
+                id: that.i,
+                recaptcha: token
             })
         }
     ))).json()
+    if (rep.code == 0) {
+        su(that.c, lang.LOVE_SUCCESS.replace('{1}', that.i))
+        document.getElementById(`${that.c.id}_talk_${that.i}_loved`).innerHTML = Number(document.getElementById(`${that.c.id}_talk_${that.i}_loved`).innerHTML) + 1;
+        document.getElementById(`${that.c.id}_talk_${that.i}_loveicon`).innerHTML = fill_love
+        const m = JSON.parse(js_ls.get(`htalk_${that.c.id}_cache`))
+        m.loved.push(that.i)
+        js_ls.put(`htalk_${that.c.id}_cache`,JSON.stringify(m))
+        } else {
+        thr(that.c, lang.LOVE_ERROR.replace('{1}', that.i))
+    }
 }
 
-/* harmony default export */ const js_love = (love);
+/* harmony default export */ const js_love = (love_love);
 // EXTERNAL MODULE: ./node_modules/_marked@2.0.4@marked/lib/marked.js
 var marked = __webpack_require__(831);
 var marked_default = /*#__PURE__*/__webpack_require__.n(marked);
@@ -3853,11 +3896,12 @@ const src_init = function (c) {
         switch (c.lg) {
             case "error":
                 return 1
-            case "warning":
-                return 2
+
             case "info":
-                return 3
+                return 2
             case "success":
+                return 3
+            case "warning":
                 return 4
             default:
                 return 4
@@ -3890,10 +3934,24 @@ const src_init = function (c) {
     }
 
 
-    ls.put(`htalk_${c.id}_cache`, JSON.stringify({
-        nid: 0,
-        next: true
-    }))
+    (() => {
+        const cache = js_ls.get(`htalk_${c.id}_cache`)
+        if (!!cache && ((() => { try { const y = JSON.parse(cache); if (!!y.loved) { return true } else { return false } } catch (p) { return false } })())) {
+            const jsonc = JSON.parse(cache)
+            jsonc.nid = 0
+            jsonc.next = true
+            jsonc.added = []
+            js_ls.put(`htalk_${c.id}_cache`, JSON.stringify(jsonc))
+        } else {
+            js_ls.put(`htalk_${c.id}_cache`, JSON.stringify({
+                nid: 0,
+                next: true,
+                loved: [],
+                added: []
+            }))
+        }
+    })()
+
     document.getElementById(c.id).innerHTML = init.replace(/<!--init-->/g, `${c.id}_init`)
         .replace(/<!--next-->/g, `${c.id}_next`)
         .replace(/<!--loading-->/g, `${c.id}_loading`)
@@ -3901,20 +3959,26 @@ const src_init = function (c) {
         .replace(/<!--lang.LOADING-->/g, lang.LOADING)
         .replace(/<!--ver-->/g, info.ver);
 
-    const startload = (c) => {
+    const startload = () => {
         loadtalk(c).then((t) => {
+            let cache = JSON.parse(js_ls.get(`htalk_${c.id}_cache`))
             for (var i of t) {
+                cache.added.push(i)
+            }
+            for (var i of cache.added) {
                 const n = new js_love(c, i)
                 document.getElementById(`${c.id}_talk_${i}_love`).addEventListener('click', () => {
                     n.add()
                 })
             }
+            js_ls.put(`htalk_${c.id}_cache`, JSON.stringify(cache))
+
         })
     }
 
-    startload(c)
+    startload()
     document.getElementById(`${c.id}_next`).addEventListener('click', () => {
-        startload(c)
+        startload()
     })
 
 }
@@ -3924,7 +3988,7 @@ const src_init = function (c) {
 
 const loadtalk = async (c) => {
     try {
-        const k = JSON.parse(ls.get(`htalk_${c.id}_cache`))
+        const k = JSON.parse(js_ls.get(`htalk_${c.id}_cache`))
         if (k.next) {
             document.getElementById(`${c.id}_next`).style = "display:none"
             document.getElementById(`${c.id}_loading`).style = "display:unset"
@@ -3948,9 +4012,9 @@ const loadtalk = async (c) => {
             let v = []
             for (var i in res.ctx) {
                 if (!res.ctx[i]) {
-                    const n = JSON.parse(ls.get(`htalk_${c.id}_cache`))
+                    const n = JSON.parse(js_ls.get(`htalk_${c.id}_cache`))
                     n.next = false
-                    ls.put(`htalk_${c.id}_cache`, JSON.stringify(n))
+                    js_ls.put(`htalk_${c.id}_cache`, JSON.stringify(n))
                     nomore()
                     break;
                 } else {
@@ -3960,14 +4024,14 @@ const loadtalk = async (c) => {
                 }
             }
             p = res.nid
-            const n = JSON.parse(ls.get(`htalk_${c.id}_cache`))
+            const n = JSON.parse(js_ls.get(`htalk_${c.id}_cache`))
             n.nid = Number(p)
             if (n.nid == 0) {
                 n.next = false
                 nomore(c)
             }
 
-            ls.put(`htalk_${c.id}_cache`, JSON.stringify(n))
+            js_ls.put(`htalk_${c.id}_cache`, JSON.stringify(n))
             document.getElementById(`${c.id}_next`).style = "display:unset"
             document.getElementById(`${c.id}_loading`).style = "display:none"
             su(c, rep.msg)
@@ -3999,7 +4063,14 @@ const inittalk = async (c, i) => {
         })())
         .replace(/<!--from_color-->/g, ran[0])
         .replace(/<!--to_color-->/g, ran[1])
-        .replace(/<!--love-->/g, fill_love)
+        .replace(/<!--love-->/g, (() => {
+
+            if (JSON.parse(js_ls.get(`htalk_${c.id}_cache`)).loved.indexOf(i.id) !== -1) {
+                return fill_love
+            } else {
+                return love
+            }
+        })())
         .replace(/<!--loved-->/g, (() => {
             if (!i.love) {
                 return 0
@@ -4030,17 +4101,7 @@ const rearr = (arr) => {
 }
 
 
-const ls = {
-    put: (key, value) => {
-        return localStorage.setItem(key, value);
-    },
-    get: (key) => {
-        return localStorage.getItem(key)
-    },
-    del: (key) => {
-        return localStorage.removeItem(key)
-    }
-}
+
 const ranarr = (arr) => {
     return arr[Math.floor(Math.random() * arr.length)];
 }
@@ -4132,7 +4193,7 @@ const ranjson = (json) => {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__(319);
+/******/ 	var __webpack_exports__ = __webpack_require__(510);
 /******/ 	htalk = __webpack_exports__;
 /******/ 	
 /******/ })()

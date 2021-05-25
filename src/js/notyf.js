@@ -24,14 +24,14 @@ export const thr = (c, n) => {
     throw `${lang.HTALK_ERROR}${n}`
 }
 export const su = (c, n) => {
-    if (c.lgn > 3) {
+    if (c.lgn > 2) {
         b.success(n);
     }
     console.log(n)
 }
 
 export const inf = (c, n) => {
-    if (c.lgn > 2) {
+    if (c.lgn > 1) {
         b.open({
             type: 'info',
             message: n
@@ -41,7 +41,7 @@ export const inf = (c, n) => {
 }
 
 export const wr = (c, n) => {
-    if (c.lgn > 1) {
+    if (c.lgn > 3) {
         b.open({
             type: 'warning',
             message: lang.HTALK_WARN.replace('${1}', n)
