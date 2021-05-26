@@ -7,7 +7,7 @@ module.exports = {
         library: 'htalk'
     },
     optimization: {
-        minimize: false
+        minimize: true
         //开发模式为false不混淆
     },
     //打包css

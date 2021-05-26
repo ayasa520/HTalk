@@ -18,7 +18,7 @@ export const loadJS = (src, callback) => {
     }
     head.appendChild(script);
 }
-
+/* 
 export const addCSS = (n) => {
 
     var style = document.createElement('style');
@@ -28,3 +28,4 @@ export const addCSS = (n) => {
     var head = document.getElementsByTagName('head')[0];
     head.appendChild(style);
 }
+*/

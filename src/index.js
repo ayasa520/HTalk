@@ -1,8 +1,8 @@
 import hinit from 'raw-loader!./html/init.html'
 import hctx from 'raw-loader!./html/ctx.html'
-import { loadJS, addCSS } from './js/loadS'
-import hlove from 'raw-loader!./html/love.html'
-import hfilllove from 'raw-loader!./html/fill_love.html'
+import { loadJS } from './js/loadS'
+import hlove from 'raw-loader!./html/love/love.html'
+import hfilllove from 'raw-loader!./html/love/fill_love.html'
 import ls from './js/ls'
 import love from './js/love'
 
@@ -10,10 +10,14 @@ import marked from 'marked'
 import { lang } from './i18n/lang'
 
 import { b, thr, su, wr, inf } from './js/notyf'
+
+import pack from './../package.json' 
+
 require('./../dist/htalk.css')
+require('./css/custom.css')
 const info = {
-    allow: "HexoPlusPlus@2.0.0β4",
-    ver: "HTalk · 2.0.0"
+    allow: pack.accept,
+    ver: `Htalk · ${pack.version}`
 }
 export const init = function (c) {
 
@@ -43,9 +47,7 @@ export const init = function (c) {
     if (!c.recaptchajs) { c.recaptchajs = 'https://recaptcha.net/recaptcha/api.js' }
     if (c.love && c.recaptcha) {
         loadJS(`${c.recaptchajs}?render=${c.recaptcha}`, () => {
-            addCSS(`.grecaptcha-badge { 
-                display: none!important; 
-            } `)
+
             su(c, lang.LOAD_RECAP_SUCCESS)
         })
     }

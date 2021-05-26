@@ -2,7 +2,7 @@ import { b, thr, su, wr, inf } from './notyf'
 import { lang } from './../i18n/lang'
 import ls from './ls'
 import getCode from './getcode'
-import hfilllove from 'raw-loader!./../html/fill_love.html'
+import hfilllove from 'raw-loader!./../html/love/fill_love.html'
 const love = function (c, i) {
     this.c = c
     this.i = i

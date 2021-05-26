@@ -1,21 +1,21 @@
 {
   "name": "htalk",
-  "version": "1.0.0",
-  "description": "",
-  "main": "postcss.config.js",
+  "version": "2.0.1-beta-2",
+  "description": "A powerful, beautiful and modern microblogging plugin",
+  "main": "./dist/htalk.js",
   "scripts": {
     "build": "npm run build:css && npm run build:js",
     "build:js": "webpack",
-    "build:css": "tailwindcss build src/css/index.css -o dist/htalk.css",
-    "dev": "vite"
+    "build:css": "tailwindcss build src/css/index.css -o dist/htalk.css"
   },
+  "accept": "HexoPlusPlus@2.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HexoPlusPlus/HTALK.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "ChenYFan",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/HexoPlusPlus/HTALK/issues"
   },
@@ -24,7 +24,6 @@
     "autoprefixer": "^10.2.5",
     "postcss": "^8.2.15",
     "tailwindcss": "^2.1.2",
-    "vite": "^2.3.3",
     "webpack": "^5.37.1",
     "webpack-cli": "^4.7.0"
   },

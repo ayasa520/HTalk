@@ -45,6 +45,26 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@-webkit-keyframes notyf-fadeinup{0%{o
 
 /***/ }),
 
+/***/ 361:
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_5_2_5_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(584);
+/* harmony import */ var _node_modules_css_loader_5_2_5_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_5_2_5_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_5_2_5_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".grecaptcha-badge { \n    display: none!important; \n} \nsvg {\n    display: unset;\n}", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ 584:
 /***/ ((module) => {
 
@@ -2934,6 +2954,33 @@ var update = _node_modules_style_loader_2_0_0_style_loader_dist_runtime_injectSt
 
 /***/ }),
 
+/***/ 169:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_2_0_0_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(574);
+/* harmony import */ var _node_modules_style_loader_2_0_0_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_2_0_0_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_5_2_5_css_loader_dist_cjs_js_custom_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(361);
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_2_0_0_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_5_2_5_css_loader_dist_cjs_js_custom_css__WEBPACK_IMPORTED_MODULE_1__/* .default */ .Z, options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_5_2_5_css_loader_dist_cjs_js_custom_css__WEBPACK_IMPORTED_MODULE_1__/* .default.locals */ .Z.locals || {});
+
+/***/ }),
+
 /***/ 574:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -3210,7 +3257,7 @@ module.exports = function (list, options) {
 
 /***/ }),
 
-/***/ 510:
+/***/ 686:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3247,8 +3294,8 @@ const loadJS = (src, callback) => {
     }
     head.appendChild(script);
 }
-
-const addCSS = (n) => {
+/* 
+export const addCSS = (n) => {
 
     var style = document.createElement('style');
     style.type = 'text/css';
@@ -3257,9 +3304,10 @@ const addCSS = (n) => {
     var head = document.getElementsByTagName('head')[0];
     head.appendChild(style);
 }
-;// CONCATENATED MODULE: ./node_modules/_raw-loader@4.0.2@raw-loader/dist/cjs.js!./src/html/love.html
+*/
+;// CONCATENATED MODULE: ./node_modules/_raw-loader@4.0.2@raw-loader/dist/cjs.js!./src/html/love/love.html
 /* harmony default export */ const love = ("<svg t=\"1621679960406\" class=\"icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"4230\" width=\"32\" height=\"32\"><path d=\"M707.392 93.355c-77.264 0-149.104 38.759-196.389 102.673-47.258-63.929-119.083-102.673-196.389-102.673-139.281 0-252.596 123.888-252.596 276.181 0 90.853 40.585 154.588 73.209 205.797 94.816 148.743 333.217 333.849 343.314 341.653 9.727 7.52 21.1 11.282 32.447 11.282 11.373 0 22.73-3.761 32.447-11.282 10.11-7.804 248.524-192.91 343.313-341.653 32.64-51.209 73.238-114.944 73.238-205.797-0.001-152.292-113.316-276.181-252.596-276.181zM840.628 540.182c-90.254 141.629-329.64 326.614-329.64 326.614s-239.359-184.986-329.641-326.614c-33.296-52.287-63.11-101.983-63.11-170.647 0-118.568 87.912-214.725 196.376-214.725 80.155 0 148.967 52.588 179.494 127.875l0-0.375 0.082 0c2.274 7.851 8.905 13.575 16.798 13.575 7.921 0 14.552-5.723 16.812-13.575l0.232 0c30.597-75.062 99.313-127.499 179.359-127.499 108.438 0 196.376 96.157 196.376 214.725 0 68.663-29.816 118.359-63.14 170.647z\" p-id=\"4231\" fill=\"#ffffff\"></path></svg>");
-;// CONCATENATED MODULE: ./node_modules/_raw-loader@4.0.2@raw-loader/dist/cjs.js!./src/html/fill_love.html
+;// CONCATENATED MODULE: ./node_modules/_raw-loader@4.0.2@raw-loader/dist/cjs.js!./src/html/love/fill_love.html
 /* harmony default export */ const fill_love = ("<svg t=\"1621679972569\" class=\"icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"4467\" width=\"32\" height=\"32\"><path d=\"M729.068827 119.55798c-94.686523 0-176.905082 48.314379-217.069851 118.640074-40.163745-70.325695-122.382305-118.640074-217.044268-118.640074-143.767358 0-229.665727 123.660414-229.665727 243.219417 0 283.128359 415.870616 527.841803 433.576883 538.126031 4.062526 2.363837 8.584516 3.538593 13.132088 3.538593 4.547573 0 9.070586-1.174756 13.132088-3.538593 17.706267-10.283204 433.576883-254.997672 433.576883-538.126031C958.708971 243.218394 872.811626 119.55798 729.068827 119.55798z\" p-id=\"4468\" fill=\"#ffffff\"></path></svg>");
 ;// CONCATENATED MODULE: ./src/js/ls.js
 const ls = {
@@ -3872,6 +3920,8 @@ const addlove = async (that, token) => {
 // EXTERNAL MODULE: ./node_modules/_marked@2.0.4@marked/lib/marked.js
 var marked = __webpack_require__(831);
 var marked_default = /*#__PURE__*/__webpack_require__.n(marked);
+;// CONCATENATED MODULE: ./package.json
+const package_namespaceObject = JSON.parse('{"i8":"2.0.1-beta-1","RL":"HexoPlusPlus@2.0.0"}');
 ;// CONCATENATED MODULE: ./src/index.js
 
 
@@ -3885,10 +3935,14 @@ var marked_default = /*#__PURE__*/__webpack_require__.n(marked);
 
 
 
+
+ 
+
 __webpack_require__(407)
+__webpack_require__(169)
 const info = {
-    allow: "HexoPlusPlus@2.0.0β4",
-    ver: "HTalk · 2.0.0"
+    allow: package_namespaceObject.RL,
+    ver: `Htalk · ${package_namespaceObject.i8}`
 }
 const src_init = function (c) {
 
@@ -3918,9 +3972,7 @@ const src_init = function (c) {
     if (!c.recaptchajs) { c.recaptchajs = 'https://recaptcha.net/recaptcha/api.js' }
     if (c.love && c.recaptcha) {
         loadJS(`${c.recaptchajs}?render=${c.recaptcha}`, () => {
-            addCSS(`.grecaptcha-badge { 
-                display: none!important; 
-            } `)
+
             su(c, lang.LOAD_RECAP_SUCCESS)
         })
     }
@@ -4193,7 +4245,7 @@ const ranjson = (json) => {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__(510);
+/******/ 	var __webpack_exports__ = __webpack_require__(686);
 /******/ 	htalk = __webpack_exports__;
 /******/ 	
 /******/ })()
