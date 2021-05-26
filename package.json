@@ -1,12 +1,7 @@
 {
   "name": "htalk",
-<<<<<<< HEAD
-  "version": "2.0.1-beta-2",
+  "version": "2.0.1-beta-5",
   "description": "A powerful, beautiful and modern microblogging plugin",
-=======
-  "version": "2.0.0",
-  "description": "A Simple And Modern Talk",
->>>>>>> c4d9978d31676e98c73bca0507052744af88199d
   "main": "./dist/htalk.js",
   "scripts": {
     "build": "npm run build:css && npm run build:js",
