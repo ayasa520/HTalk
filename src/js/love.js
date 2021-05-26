@@ -30,7 +30,7 @@ love.prototype.add = async function () {
         }
 
     } else {
-        thr(this.c, '你已经点赞过啦！')
+        thr(this.c, lang.LOVED)
     }
 }
 

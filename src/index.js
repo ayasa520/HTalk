@@ -111,6 +111,18 @@ export const init = function (c) {
 
 }
 
+export const dark = (c)=>{
+    if (!c.id) { thr(c, lang.NONE_ELEID) }
+    if (!document.getElementById(c.id)) { thr(c, lang.NONE_ELE.replace("${1}", c.id)) }
+    if(c.dark){
+        document.getElementById(c.id).classList.add('dark')
+        su(c, lang.DARK_TRUE_SUCCESS)
+    }else{
+        document.getElementById(c.id).classList.remove('dark')
+        su(c, lang.DARK_FALSE_SUCCESS)
+    }
+    
+}
 
 
 
@@ -187,7 +199,7 @@ const inittalk = async (c, i) => {
             if (!!i.info) {
                 return `${i.time} · ${i.info}`
             } else {
-                return `${i.time} · 来自HexoPlusPlus后端`
+                return `${i.time} · ${lang.FROM_HPP}`
             }
         })())
         .replace(/<!--from_color-->/g, ran[0])

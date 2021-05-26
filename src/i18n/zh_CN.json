@@ -17,5 +17,9 @@
     "LOVING":"正在点赞id为{1}的说说",
     "RECAP_ERROR":"人机验证失败！",
     "LOVE_SUCCESS":"点赞id为{1}的说说成功！",
-    "LOVE_ERROR":"点赞id为{1}的说说失败！"
+    "LOVE_ERROR":"点赞id为{1}的说说失败！",
+    "LOVED":"你已经点赞过啦！",
+    "DARK_TRUE_SUCCESS":"暗色模式开启成功！",
+    "DARK_FALSE_SUCCESS":"暗色模式关闭成功！",
+    "FROM_HPP":"来自HPP后端"
 }
